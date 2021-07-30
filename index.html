@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <div class="input">
+        <div class="form">
+            <h2>Welcome to the AKAN NAME GENERATOR.</h2>
+            <p> Welcome to our Akan Name Generator.<br> Its a simple web program that allows you to input your birthday and based on the input,calculates your input and generates an Akan name for you!</p>
+            <p> <a class="name" href="https://en.wikipedia.org/wiki/Akan_names"><strong>Akan names</strong></a> are names popular in the Ghanaian culture, where the children's first names are based on a day name which corresponds to the day of the week the child was born. The names are also dependant on the child's gender.</p>
+            <p>To find out what your Akan name is, please fill in the details required below:</p>
+            <p id="error-msg">
+            PLEASE ENTER VALID DATES
+            </p>
+             
+            <div id="akanName">
+       <form action="" class="user-details">
+
+           <lable for="first name">
+               First name
+               <input type="text" id="fname" name="First-name" placeholder="First Name" value="" required>
+           </lable><br><br>
+           <label for="yearInput">
+               YEAR:
+               <input type="number" id="Year" name="birth-year" placeholder="YYYY" value="" required>
+           </label>
+           
+           <label for="month">
+            MONTH
+            <select name="" id="Month" >
+                <option>------</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+           </label>
+           <label for="dayInput">
+               DAY:
+               <input type="number" id="Day" name="birth-day" placeholder="DD" value="" min="1" max="31" required>
+           </label>
+           <br><br>
+           <label for="gender">
+               <p>WHAT'S YOUR GENDER?</p>
+               
+               MALE
+               <input type="radio" name="gender" id="male"  value="male"  required> 
+               FEMALE
+               <input id="female" type="radio" name="gender" value="female" required>
+           </label>
+           <br><br>
+           <input type="submit" id="get-name" value="GET NAME" onclick="getName(); return false;" >
+           </form><br>
+        </div>
+        <form action="">
+        <div id="reset">
+            <input class="clear" type="submit" value="Reset fields" onclick="click()"> 
+        </div>
+        </form>
+    
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
